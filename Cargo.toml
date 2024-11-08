@@ -1,0 +1,12 @@
+[package]
+name = "sync_select"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Evan Schwartzentruber <evandotschwartzentruber@gmail.com>"]
+description = "A short-circuiting (verbose) `std::thread::scope`."
+exclude = [".github/", ".gitignore", "LICENSE", "README.md"]
+
+[profile.release]
+lto = true
+codegen-units = 1
