@@ -1,9 +1,9 @@
 use std::{
     sync::{
-        atomic::{AtomicBool, Ordering},
         Arc,
+        atomic::{AtomicBool, Ordering},
     },
-    thread::{current, park, spawn, JoinHandle, Thread},
+    thread::{JoinHandle, Thread, current, park, spawn},
 };
 
 pub struct SyncSelect {
